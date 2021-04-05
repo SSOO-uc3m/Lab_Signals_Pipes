@@ -1,1 +1,0 @@
-main	/home/carlos/Documents/Lab_Signals_Pipes/Exercise_07/main.c	/^int main(int argc, char **argv)$/;"	function	line:3	signature:(int argc, char **argv)	returns:int 

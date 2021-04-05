@@ -4,11 +4,13 @@ Release_gcc_unicode
 DebugUnicode
 *.session
 *.tags
-*.d
-*.o
-*.pyc
-*.lib
-*.a
+**/*.txt
+**/*.d
+**/*.o
+**/*.pyc
+**/*.lib
+**/*.a
+**/main
 bin
 bin/ofMaker
 lib
@@ -16,3 +18,4 @@ lib
 .build-debug
 *.mk
 *.workspace.session
+
