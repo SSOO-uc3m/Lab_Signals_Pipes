@@ -5,20 +5,20 @@
 
 #define ALARM_TIME 3
 
-void alarmGoesOff(int signal) {
+// add function to capture the signal SIGALRM
 
-	printf("Alarm %d \n", signal);
- 
-} 
+
  
  int main() {
 
- for(;;){
-	if (signal(SIGALRM, alarmGoesOff) == SIG_ERR) {
-		perror("Error while installing a SIGALRM handler.\n");
-		exit(-1);	
-	}
-	alarm(ALARM_TIME);           /* start the timer */ 
-	pause();            /* next caught signal wakes us up */ 
-	} 
+	// add an infinite loop
+	 
+	// add a custom handler for SIGALRM
+	
+	// check if there is an error installing the handler 
+		
+	// set an alarm for ALARM_TIME seconds
+	
+	// block the process until any signal is received 
+
  }

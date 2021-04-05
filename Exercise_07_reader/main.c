@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-int main() {
-    char buffer[90];
+int main() {    
+	
+	// read a string of the STDIN
+	
+	// print the string to the STDOUT
 
-    scanf("%s",buffer);
-    printf ("I have read:%s:\n",buffer);
+  
 	
 }

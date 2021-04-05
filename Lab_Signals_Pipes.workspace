@@ -5,10 +5,10 @@
   <Project Name="Exercise_03" Path="Exercise_03/Exercise_03.project" Active="No"/>
   <Project Name="Exercise_04" Path="Exercise_04/Exercise_04.project" Active="No"/>
   <Project Name="Exercise_05" Path="Exercise_05/Exercise_05.project" Active="No"/>
-  <Project Name="Exercise_06" Path="Exercise_06/Exercise_06.project" Active="Yes"/>
   <Project Name="Exercise_07" Path="Exercise_07/Exercise_07.project" Active="No"/>
-  <Project Name="Exercise_07_writer" Path="Exercise_07_writer/Exercise_07_writer.project" Active="No"/>
+  <Project Name="Exercise_07_writer" Path="Exercise_07_writer/Exercise_07_writer.project" Active="Yes"/>
   <Project Name="Exercise_07_reader" Path="Exercise_07_reader/Exercise_07_reader.project" Active="No"/>
+  <Project Name="Exercise_06" Path="Exercise_06/Exercise_06.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -17,10 +17,10 @@
       <Project Name="Exercise_03" ConfigName="Debug"/>
       <Project Name="Exercise_04" ConfigName="Debug"/>
       <Project Name="Exercise_05" ConfigName="Debug"/>
-      <Project Name="Exercise_06" ConfigName="Debug"/>
       <Project Name="Exercise_07" ConfigName="Debug"/>
       <Project Name="Exercise_07_writer" ConfigName="Debug"/>
       <Project Name="Exercise_07_reader" ConfigName="Debug"/>
+      <Project Name="Exercise_06" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -29,10 +29,10 @@
       <Project Name="Exercise_03" ConfigName="Release"/>
       <Project Name="Exercise_04" ConfigName="Release"/>
       <Project Name="Exercise_05" ConfigName="Release"/>
-      <Project Name="Exercise_06" ConfigName="Release"/>
       <Project Name="Exercise_07" ConfigName="Release"/>
       <Project Name="Exercise_07_writer" ConfigName="Release"/>
       <Project Name="Exercise_07_reader" ConfigName="Release"/>
+      <Project Name="Exercise_06" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

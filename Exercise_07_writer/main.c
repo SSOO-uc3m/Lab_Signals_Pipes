@@ -2,5 +2,5 @@
 
 int main (){
 
-    printf ("hiThere123456\n");
+	// Print a string without spaces in the STDOUT
 }

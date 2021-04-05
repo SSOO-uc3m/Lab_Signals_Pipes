@@ -7,46 +7,37 @@ struct timeval  start;
 
 #define SECONDS_WAIT_1 10
 #define SECONDS_WAIT_2 3
-#define MICROSECONDS 1000.0
 
-void captureSignal (int s){
-	  struct timeval  end;
-	  gettimeofday(&end, NULL);
-	  printf ("The signal %d recibed\n",s);
-	  printf ("Total time = %f seconds\n",
-         (double) (end.tv_usec - start.tv_usec) / 1000000 +
-         (double) (end.tv_sec - start.tv_sec));
-}
-void childDeath (int s){
-	  struct timeval  end;
-	  gettimeofday(&end, NULL);
-	  printf ("The son has finished: %d\n",s);
-	  printf ("Total time = %f seconds\n",
-         (double) (end.tv_usec - start.tv_usec) / 1000000 +
-         (double) (end.tv_sec - start.tv_sec));
-}
+// add function to capture the signal SIGUSR1
+
+// print time passed
+
+// add function to capture the signal SIGCHLD
+
+// print time passed
+
+
+
 int main (){
-	struct sigaction sa1,sa2;
-	gettimeofday(&start, NULL);
+	
+	// create two mask of signals add a custom handler
 
-	if (fork() == 0){    // child	  
-      sleep (SECONDS_WAIT_1);
-      kill ( getppid(), SIGUSR1);	
-      sleep(SECONDS_WAIT_2);
-	}
-	else { // father
-		sa1.sa_handler=captureSignal;
-		sa1.sa_flags=0;
-		sigemptyset(&(sa1.sa_mask));
-		sigaction (SIGUSR1, &sa1,NULL);
+	// create a child process
 
-		sa2.sa_handler=childDeath;
-		sa2.sa_flags=0;
-		sigemptyset(&(sa2.sa_mask));
-		sigaction (SIGCHLD, &sa2,NULL);
+	// child wait SECONDS_WAIT_1
+	
+	// child send SIGUSR1 signal to his parent
+	
+	// child wait SECONDS_WAIT_2
+
+	// parent create a mask of signals to capture SIGUSR1 during the handler and an empty set of signals
 
 
-		pause(); // == sleep(999999)
-		pause(); // == sleep(999999)
-  }
+	// parent create a mask of signals to capture SIGCHLD during the handler and an empty set of signals
+
+	// parent blocked until a signal is received (SIGUSR1)
+
+	// parent blocked until the signal is received (SIGCHLD)
+
+
 }
